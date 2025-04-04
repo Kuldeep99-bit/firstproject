@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.nav-logo i {
+    font-size: 40px;
+    color: white;
+}
+
+/* Search Bar */
+.nav-search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-search input {
+    width: 60%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-search button {
+    padding: 8px 15px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.nav-search button:hover {
+    background-color: #ff9900;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav-links i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/* Sub Navbar */
+.sub-navbar {
+    background-color: #37475a;
+    padding: 10px;
+}
+
+.sub-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-navbar li {
+    display: inline;
+}
+
+.sub-navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.sub-navbar a:hover {
+    background-color: #485769;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: white;
+    background: #ff9900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hero-btn:hover {
+    background: #e68a00;
+}
+/* Gaming Accessories Section */
+.categories {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.category-item p {
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+/* See More Button */
+.see-more a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007185;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.see-more a:hover {
+    background: #005f66;
+}
+/* Fashion Deals Section */
+.fashion-deals {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fashion-deals h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.fashion-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fashion-item {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.fashion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fashion-item p {
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.fashion-item:hover {
+    transform: scale(1.05);
+}
+
+/* See More Button */
+.see-more a,
+.see-all-deals a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007185;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.see-more a:hover,
+.see-all-deals a:hover {
+    background: #005f66;
+}
+/* Footer Styles */
+footer {
+    background-color: #232f3e;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-top {
+    text-align: center;
+    padding: 10px 0;
+    background: #37475a;
+}
+
+.back-to-top {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+
+.back-to-top:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background: #131a22;
+}
